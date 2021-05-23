@@ -1,0 +1,101 @@
+@media all and (max-width:768px){
+    #intro_text_w{
+        display: none;
+    }
+    #intro_text_m{
+        position: fixed;
+        display: block;
+        top:1rem;
+        left:50%;
+        transform: translateX(-50%);
+        font-size: 25px;
+    }
+    nav h2{
+        transform: rotate(0deg);
+        top:1rem;
+        left:50%;
+        transform: translateX(-50%);
+    }
+    #menu_open,  #menu_close{
+        top:1rem;
+        right:1rem;
+    }
+    @keyframes up {
+        0% {opacity: 0; transform: translateY(350px);}
+        100% {opacity: 1; transform: translateY(0%);}
+    }
+    #work1{
+        flex-direction: column;
+    }
+    .pic{
+        width:100%;
+        height:45%;
+        top:0%;
+        left:0%;
+        transform: translateY(0);
+    }
+    .pic img{ 
+        width:60%;
+        position: absolute;
+        top:60%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        margin: 0;
+    }
+    .detail{
+        width:90%;
+        height:45%;
+        bottom:5%;        
+        left:5%;
+        transform: translateY(0);
+    }
+    .detail ul{
+        bottom: 50%;
+        transform: translateY(50%);
+    }
+    .detail li:nth-child(1){
+        font-size: 1.3vmax;
+    }
+    .detail li:nth-child(2){
+        font-size: 1.3vmax;
+    }
+    .detail li:nth-child(3){
+        font-size: 2.8vmax;
+    }
+    .detail li:nth-child(4){
+        display: none;
+    }
+    .detail li:nth-child(5){
+        font-size: 1.3vmax;
+    }
+    .detail button:hover::before{
+        transform: translateX(0) translateY(0);
+        border:2px solid white;
+    }
+    .detail button:hover::after{
+        border:2px solid white;
+        transform: translateX(0) translateY(0);
+    }
+
+    #skills{
+        top:27%;
+    }
+    #skills ul{
+        width:65%;
+        justify-content: space-evenly;
+    }
+    #skills li{
+        width:30%;
+    }
+    #skills .st0{fill:white;stroke:rgb(95, 95, 95); stroke-width:2;}
+    #skills p{
+        font-size: 1.1vmax;
+    }
+    #contact li{
+        margin-top: 3%;
+    }
+    #contact{
+        padding:3%;
+    }
+
+}
