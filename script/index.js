@@ -63,6 +63,14 @@ $('body').scroll(function(){
             opacity:'1'
         },1300)
     }
+    if(scr>=3200){
+        $('#work5 .bg').animate({
+            opacity:'1'
+        },2000)
+        $('#work5 .pic').animate({
+            opacity:'1'
+        },1300)
+    }
 });
 
 function mv(num){
